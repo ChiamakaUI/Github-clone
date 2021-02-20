@@ -12,8 +12,8 @@ const httpLink = createHttpLink({
 
 
 const authLink = setContext((_, { headers }) => {
-   const token = "69346046fa2aade9610df7b69c3b3490c04f0085";
-  
+  const token =`${process.env.REACT_APP_GITHUB_KEY}`
+
   return {
     headers: {
       ...headers,

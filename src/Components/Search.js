@@ -18,8 +18,8 @@ export default function Apii({ onSearch }) {
 
   return (
     <div className="container ml-auto search d-flex">
-      <form onSubmit={handleSearch} class="form-inline">
-        <div class="form-group mb-2">
+      <form onSubmit={handleSearch} className="form-inline">
+        <div className="form-group mb-2">
           <input
             type="text"
             className="form-control"
@@ -28,7 +28,7 @@ export default function Apii({ onSearch }) {
             onChange={(event) => setSearchInput(event.target.value)}
           />
         </div>
-        <div class="form-group mx-sm-3 mb-2">
+        <div className="form-group mx-sm-3 mb-2">
           <button type="submit" className="btn bg-dark btn-outline-secondary">
             Search
           </button>
